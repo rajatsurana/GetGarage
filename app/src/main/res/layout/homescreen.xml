@@ -1,0 +1,130 @@
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawerlayout1"
+    android:background="@color/splashscreenbackgoundcolor"
+    android:layout_width="match_parent"
+    android:theme="@style/login"
+    android:layout_height="match_parent" >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+
+        >
+        <include
+            android:id="@+id/tool_bar"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/abc_action_bar_default_height_material"
+            layout="@layout/tool_bar"
+
+            android:fitsSystemWindows="true" />
+    </LinearLayout>
+    <RelativeLayout
+        android:paddingTop="48dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="vertical">
+        <Button
+            android:text="Choose Service"
+            android:id="@+id/chooseservice"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/cards"
+            android:layout_marginTop="150dp"
+            android:layout_marginBottom="20dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/whitecolor"/>
+        <Button
+            android:text="Describe Problem"
+            android:id="@+id/describeproblem"
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/chooseservice"
+            android:background="@color/cards"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/whitecolor"/>
+        <Button
+            android:text="Get me a mechanic"
+            android:id="@+id/getmechanic"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="20dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/describeproblem"
+            android:background="@color/cards"
+
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/whitecolor"/>
+    </RelativeLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="10"
+        android:id="@+id/slider"
+        android:layout_gravity="start"
+
+        >
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_weight="1.5"
+            android:layout_height="0dp"
+            android:layout_gravity="top"
+
+            android:id="@+id/profile"
+
+
+            >
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:background="@color/cards"
+                android:weightSum="10"
+
+                >
+
+
+                <TextView
+                    android:layout_weight="8.5"
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:textColor="#ffffff"
+                    android:layout_gravity="center_vertical"
+
+                    android:text="Rajat Surana"
+                    android:textSize="20sp"
+                    />
+                <ImageView
+
+                    android:id="@+id/circleView"
+
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/icon_gps_disable"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1.5"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+        <ListView
+            android:layout_width="match_parent"
+            android:id="@+id/drawerList"
+            android:background="#ffffff"
+            android:divider="@null"
+            android:layout_weight="8.5"
+            android:layout_height="0dp"
+            android:clickable="true"
+            >
+
+        </ListView>
+    </LinearLayout>
+</android.support.v4.widget.DrawerLayout>

@@ -1,0 +1,152 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/splashscreenbackgoundcolor"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+
+    android:theme="@style/login"
+    tools:context="com.getgarage.LoginFragment" >
+
+    <ImageView
+        android:id="@+id/simageView"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:src="@drawable/garage" />
+
+
+
+    <EditText
+        android:id="@+id/repassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/spassword"
+        android:layout_alignRight="@+id/spassword"
+        android:textColorHint="@color/whitecolor"
+        android:drawableLeft="@drawable/about"
+        android:drawablePadding="10dp"
+        android:ems="10"
+
+        android:hint="Re-enter password"
+        android:paddingLeft="10dp"
+        android:textAppearance="?android:attr/textAppearanceSmallPopupMenu" >
+    </EditText>
+
+    <EditText
+        android:id="@+id/susername"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/spassword"
+        android:layout_alignLeft="@+id/spassword"
+        android:layout_alignRight="@+id/spassword"
+        android:layout_centerHorizontal="true"
+        android:drawableLeft="@drawable/about"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="Email address"
+        android:textColorHint="@color/whitecolor"
+        android:paddingBottom="10dp"
+
+        android:paddingLeft="10dp"
+
+        android:textAppearance="?android:attr/textAppearanceSmallPopupMenu" />
+    <EditText
+        android:id="@+id/spassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_centerHorizontal="true"
+        android:drawableLeft="@drawable/about"
+        android:drawablePadding="10dp"
+        android:layout_above="@+id/repassword"
+        android:ems="10"
+
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingBottom="10dp"
+        android:textColorHint="@color/whitecolor"
+        android:paddingLeft="10dp"
+        android:textAppearance="?android:attr/textAppearanceSmallPopupMenu" />
+
+    <EditText
+        android:id="@+id/sfullname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/repassword"
+        android:layout_alignLeft="@+id/spassword"
+        android:layout_alignRight="@+id/spassword"
+        android:textColorHint="@color/whitecolor"
+        android:drawableLeft="@drawable/about"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="Full name"
+        android:paddingLeft="10dp"
+        android:textAppearance="?android:attr/textAppearanceSmallPopupMenu" >
+    </EditText>
+    <EditText
+        android:id="@+id/sphonenumbername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/sfullname"
+        android:layout_alignLeft="@+id/spassword"
+        android:layout_alignRight="@+id/spassword"
+        android:textColorHint="@color/whitecolor"
+        android:inputType="number"
+        android:drawableLeft="@drawable/about"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="10 digit Phone Number"
+        android:paddingLeft="10dp"
+        android:textAppearance="?android:attr/textAppearanceSmallPopupMenu" >
+    </EditText>
+    <TextView
+        android:id="@+id/stextview1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/stextview"
+        android:layout_marginBottom="5dp"
+        android:layout_centerHorizontal="true"
+        android:text="I have an Invitation!"
+        android:textColor="@color/whitecolor"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/stextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Need Help?"
+        android:textColor="@color/needhelpcolor"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <Button
+        android:id="@+id/sbutton"
+        android:layout_width="wrap_content"
+
+        android:layout_height="38dp"
+        android:layout_alignLeft="@+id/spassword"
+        android:layout_alignRight="@+id/spassword"
+        android:layout_above="@+id/stextview"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="57dp"
+        android:background="@color/authenticatebuttoncolor"
+        android:text="Authenticate"
+        android:textAppearance="?android:attr/textAppearanceButton"
+        android:textColor="@color/whitecolor" />
+
+</RelativeLayout>

@@ -1,0 +1,31 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/splashscreenbackgoundcolor"
+    android:orientation="vertical" >
+    <include
+        android:id="@+id/tool_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/abc_action_bar_default_height_material"
+        layout="@layout/tool_bar"
+
+        android:fitsSystemWindows="true" />
+    <ExpandableListView
+        android:id="@+id/expListView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.14" >
+    </ExpandableListView>
+    <Button
+        android:id="@+id/bookService"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Book Service" />
+    <Button
+        android:id="@+id/findSelect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Find items that are Selected" />
+
+</LinearLayout>

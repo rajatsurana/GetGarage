@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/splashscreenbackgoundcolor"
+    android:layout_height="match_parent">
+
+
+    <include
+        android:id="@+id/tool_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/abc_action_bar_default_height_material"
+        layout="@layout/tool_bar"
+
+        android:fitsSystemWindows="true" />
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <AutoCompleteTextView
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/autoCompleteBrands"/>
+    <com.getgarage.autocomplete.CustomAutoCompleteView
+        android:id="@+id/mybrandautocomplete"
+        android:layout_below="@+id/autoCompleteBrands"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Brand Name"
+        android:completionThreshold="1" >
+    </com.getgarage.autocomplete.CustomAutoCompleteView>
+    <com.getgarage.autocomplete.CustomAutoCompleteView
+        android:id="@+id/mymodelautocomplete"
+        android:hint="Model Name"
+        android:layout_below="@+id/mybrandautocomplete"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:completionThreshold="1" >
+    </com.getgarage.autocomplete.CustomAutoCompleteView>
+    <EditText
+        android:hint="PlateNumber"
+        android:inputType="number"
+        android:id="@+id/plateNumber"
+        android:layout_below="@+id/mymodelautocomplete"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:hint="Mileage"
+        android:inputType="number"
+        android:id="@+id/mileage"
+        android:layout_below="@+id/plateNumber"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:text="Save Vehicle"
+        android:id="@+id/saveNewVehicle"
+        android:gravity="center"
+        android:layout_below="@+id/mileage"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
+
+</LinearLayout>

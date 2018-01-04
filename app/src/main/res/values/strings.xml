@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">GetGarage</string>
+    <string name="userName">Username</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="drawer_open">Open Drawer</string>
+    <string name="drawer_close">Close Drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="action_report">Report</string>
+    <string-array name="social">
+    <item>Home</item>
+    <item>Vehicles</item>
+    <item>Payment</item>
+    <item></item>
+    <item>Help</item>
+        <item>About</item>
+    </string-array>
+    <string name="preferences_key">com.getgarage</string>
+
+</resources>
